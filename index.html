@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="kz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML book</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    
+     <!-- Жылжитын фон мәтін -->
+    <div class="moving-text-container">
+        <div class="moving-text">HTML | JavaScript | CSS | PHP</div>
+    </div>
+    <div class="scene">
+        <div class="cube">
+            <div class="face front">HTML</div>
+            <div class="face back">JavaScript</div>
+            <div class="face right">CSS</div>
+            <div class="face left">HTML</div>
+            <div class="face top">JavaScript</div>
+            <div class="face bottom">CSS</div>
+        </div>
+    </div>
+    <header>
+        <span id="usernameDisplay"></span>
+        <div class="auth-buttons">
+            <!-- Кнопка для перехода на страницу регистрации -->
+            <button onclick="redirectToPage()">Кіру/Тіркелу</button>
+            <!-- Кнопка для выхода, перенаправляющая на страницу register.html -->
+            <button onclick="logout()">Шығу</button>
+        </div>
+        
+        <script>
+            // Функция для перенаправления на страницу регистрации
+            function redirectToPage() {
+                window.location.href = "register.html";  // Переход на страницу регистрации
+            }
+        
+            // Функция для выхода и перенаправления на страницу регистрации
+            function logout() {
+                // Логика выхода, например, очистка сессий или редирект на страницу регистрации
+                console.log('Шығу');
+                window.location.href = "register.html";  // Перенаправление на страницу register.html
+            }
+        </script>
+    <h2>WEB ПАРАҚТАРЫН ҚҰРУ ҮШІН HTML ТІЛІНЕН ОҚУ ҚҰРАЛЫ</h2>
+    </header>
+    <nav>
+        <a href="index.html">Басты бет</a>
+        <a href="obshaya/course.html">Курс туралы</a>
+        <a href="obshaya/introduction.html">Курсқа кіріспе</a>
+    </nav>
+    <div class="container">
+        <div class="left-box">
+            <h3>Лекциялар</h3>
+            <div class="course"><h3>ТАҚЫРЫП 1</h3><a href="lekcia/1_urok.html" class="button">Лекция</a></div>
+            <div class="course"><h3>ТАҚЫРЫП 2</h3><a href="lekcia/2_urok.html" class="button">Лекция</a></div>
+            <div class="course"><h3>ТАҚЫРЫП 3</h3><a href="lekcia/3_urok.html" class="button">Лекция</a></div>
+            <div class="course"><h3>ТАҚЫРЫП 4</h3><a href="lekcia/4_urok.html" class="button">Лекция</a></div>
+            <div class="course"><h3>ТАҚЫРЫП 5</h3><a href="lekcia/5_urok.html" class="button">Лекция</a></div>
+            <div class="course"><h3>ТАҚЫРЫП 6</h3><a href="lekcia/6_urok.html" class="button">Лекция</a></div>
+            <div class="course"><h3>ТАҚЫРЫП 7</h3><a href="lekcia/7_urok.html" class="button">Лекция</a></div>
+            <div class="course"><h3>ТАҚЫРЫП 8</h3><a href="lekcia/8_urok.html" class="button">Лекция</a></div>
+            <div class="course"><h3>ТАҚЫРЫП 9</h3><a href="lekcia/9_urok.html" class="button">Лекция</a></div>
+            
+        </div>
+        <div class="center-box">
+            <h3>Тапсырмалар</h3>
+            <div class="course">
+                <h3>Тапсырма 1</h3>
+                <a href="Zadanie/zadanie1.html" class="button">Тапсырма</a>
+                <a href="voprosy/1voprosy.html" class="button">Бақылау сұрақтары</a>
+                <a href="test/1test.html" class="button">Тест</a>
+            </div>
+            <div class="course">
+                <h3>Тапсырма 2</h3>
+                <a href="Zadanie/zadanie2.html" class="button">Тапсырма</a>
+                <a href="voprosy/2voprosy.html" class="button">Бақылау сұрақтары</a>
+                <a href="test/2test.html" class="button">Тест</a>
+            </div>
+            <div class="course">
+                <h3>Тапсырма 3</h3>
+                <a href="Zadanie/zadanie3.html" class="button">Тапсырма</a>
+                <a href="voprosy/3voprosy.html" class="button">Бақылау сұрақтары</a>
+                <a href="test/3test.html" class="button">Тест</a>
+            </div>
+            <div class="course">
+                <h3>Тапсырма 4</h3>
+                <a href="Zadanie/zadanie4.html" class="button">Тапсырма</a>
+                <a href="voprosy/4voprosy.html" class="button">Бақылау сұрақтары</a>
+                <a href="test/4test.html" class="button">Тест</a>
+            </div>
+            <div class="course">
+                <h3>Тапсырма 5</h3>
+                <a href="Zadanie/zadanie5.html" class="button">Тапсырма</a>
+                <a href="voprosy/5voprosy.html" class="button">Бақылау сұрақтары</a>
+                <a href="test/5test.html" class="button">Тест</a>
+            </div>
+            <div class="course">
+                <h3>Тапсырма 6</h3>
+                <a href="Zadanie/zadanie6.html" class="button">Тапсырма</a>
+                <a href="voprosy/6voprosy.html" class="button">Бақылау сұрақтары</a>
+                <a href="test/6test.html" class="button">Тест</a>
+            </div>
+            <div class="course">
+            <h3>Тапсырма 7</h3>
+                <a href="Zadanie/zadanie7.html" class="button">Тапсырма</a>
+                <a href="voprosy/7voprosy.html" class="button">Бақылау сұрақтары</a>
+                <a href="test/7test.html" class="button">Тест</a>
+            </div>
+            <div class="course">
+                <h3>Тапсырма 8</h3>
+                <a href="Zadanie/zadanie8.html" class="button">Тапсырма</a>
+                <a href="voprosy/8voprosy.html" class="button">Бақылау сұрақтары</a>
+                <a href="test/8test.html" class="button">Тест</a>
+            </div>
+            <div class="course">
+                <h3>Тапсырма 9</h3>
+                <a href="Zadanie/zadanie9.html" class="button">Тапсырма</a>
+                <a href="voprosy/9voprosy.html" class="button">Бақылау сұрақтары</a>
+                <a href="test/9test.html" class="button">Тест</a>
+            </div>
+        </div>
+            <div class="right-box">
+            <h3>Қосымша материалдар</h3>
+                <div class="course">
+                <a href="lekcia/simbol.html" class="button"><h6>HTML-дағы арнайы таңбалар</h6></a><br><br><br>
+                <a href="https://www.youtube.com/playlist?list=PL-dw6iM8hYbolvhH46iClece0X8TKdIGB" class="button"><h6>Курс бойынша білімді жетілдіруге арналған видео түсіндірмелер</h6></a><br><br><br>
+                <a href="lekcia/rgb.html" class="button"><h6>RGB құраушысы бойынша түстік гамманың түрлері</h6></a><br><br><br>
+                <a href="https://alzari.ru/html-tegi.html#q5" class="button"><h6>Барлық html тегтері сипаттамасы бар - кодтар тізімі</h6></a><br><br><br>
+            <h3>Сайт жасауға арналған бағдарламалар</h3>
+                <a href="https://code.visualstudio.com/download" class="button"><h6>Visual Studio Code бағдарламасы</h6></a><br><br><br>
+                <a href="https://www.sublimetext.com/download" class="button"><h6>Sublime Text бағдарламасы</h6></a><br><br>
+                </div>
+            </div>
+           
+    </div>
+    <script>
+        // Функция для открытия модальных окон
+        function openModal(id) {
+            document.getElementById(id).style.display = 'block';
+        }
+    
+        // Функция для закрытия модальных окон
+        function closeModal(id) {
+            document.getElementById(id).style.display = 'none';
+            // Сброс значений в формах
+            const inputs = document.getElementById(id).querySelectorAll('input');
+            inputs.forEach(input => input.value = '');
+        }
+    
+        // Функция регистрации
+        function register() {
+            const username = document.getElementById('registerUsername').value;
+            const password = document.getElementById('registerPassword').value;
+    
+            fetch('/register', {
+                method: 'POST',
+                headers: {'Content-Type': 'application/json'},
+                body: JSON.stringify({ username, password })
+            })
+            .then(res => res.text())
+            .then(alert)
+            .then(() => {
+                closeModal('registerModal');
+                updateAuthState();
+            });
+        }
+    
+        // Функция входа
+        function login() {
+            const username = document.getElementById('loginUsername').value;
+            const password = document.getElementById('loginPassword').value;
+    
+            fetch('/login', {
+                method: 'POST',
+                headers: {'Content-Type': 'application/json'},
+                body: JSON.stringify({ username, password })
+            })
+            .then(res => res.ok ? res.text() : res.text().then(msg => { throw new Error(msg); }))
+            .then(msg => {
+                alert(msg);
+                closeModal('loginModal');
+                updateAuthState();
+            })
+            .catch(err => alert(err.message));
+        }
+    
+        // Функция выхода
+        async function logout() {
+            const res = await fetch('/logout', { method: 'POST' });
+            if (res.ok) {
+                location.reload();
+            } else {
+                alert('Шығу сәтсіз болды');
+            }
+        }
+    
+        // Функция для обновления состояния аутентификации
+        function updateAuthState() {
+            fetch('/status')
+                .then(res => res.json())
+                .then(data => {
+                    // Показать или скрыть кнопки в зависимости от статуса
+                    document.querySelector("button[onclick=\"openModal('loginModal')\"]").style.display = data.loggedIn ? 'none' : 'inline-block';
+                    document.querySelector("button[onclick=\"openModal('registerModal')\"]").style.display = data.loggedIn ? 'none' : 'inline-block';
+                    document.querySelector("button[onclick=\"logout()\"]").style.display = data.loggedIn ? 'inline-block' : 'none';
+                });
+        }
+    
+        // Обновить состояние аутентификации при загрузке страницы
+        window.onload = updateAuthState;
+    </script>
+    
+<footer><p>&copy; 2025 Авторлары: Арнайы пәндер оқытушыcы Серикова А.А және Еркентайұлы Е.</p></footer>
+</body>
+</html>

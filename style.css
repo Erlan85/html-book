@@ -1,0 +1,233 @@
+              html, body {
+                height: 100%;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            font-family: Arial, sans-serif;
+            background-color: #E0FFFF;
+            min-height: 100vh;
+            overflow: auto;
+            position: relative;
+        }
+          /* Стильдері (қысқартылған) */
+        body { font-family: sans-serif; padding: 20px; }
+        .auth-buttons button { margin: 5px; }
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 9999; /* Бұл ең үстінен шығару үшін */
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0,0,0,0.5);
+        }
+        
+        .modal-content {
+            background: white;
+            padding: 20px;
+            margin: 100px auto;
+            width: 300px;
+            border-radius: 8px;
+            position: relative;
+            z-index: 10000; /* Контент те үстінен көрінуі керек */
+        }
+        
+        header {
+            background-color: #007bff;
+            color: #fff;
+            padding: 10px 20px;
+            text-align: center;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #0056b3;
+            padding: 10px 0;
+        }
+
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+        /* Жылжитын фон мәтін контейнері */
+        .moving-text-container {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* Жылжитын сөздер стилі */
+        .moving-text {
+            position: absolute;
+            font-size: 5rem;
+            font-weight: bold;
+            opacity: 0.1;
+            white-space: nowrap;
+            animation: moveText 10s linear infinite;
+        }
+
+        /* Анимация */
+        @keyframes moveText {
+            from {
+                transform: translateX(-100%);
+            }
+            to {
+                transform: translateX(100%);
+            }
+        }
+
+        /* Контейнер занимает всю доступную высоту */
+.container {
+    flex: 1; /* Занимает всё доступное пространство */
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    max-width: 1100px;
+    margin: 20px auto;
+    gap: 20px;
+    background: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+    z-index: 1;
+}
+
+/* Левая и правая колонки */
+.left-box {
+    width: 20%;
+    background: white;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    font-size: 20px;
+}
+.center-box {
+    width: 50%;
+    background: white;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    font-size: 20px;
+}
+.right-box {
+    width: 30%;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    font-size: 20px;
+}
+
+        .button {
+            display: inline-block;
+            background-color: #007bff;
+            color: white;
+            text-decoration: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .button:hover {
+            background-color: #080b0d;
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: #fff;
+            width: 100%;
+        }
+
+        /* Адаптивность для мобильных устройств */
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .left-box, .right-box {
+                width: 90%;
+            }
+        }
+        .scene {
+            width: 100px;
+            height: 100px;
+            perspective: 600px;
+            position: absolute;
+            top: 10px;
+            left: 10px;
+        }
+        .cube {
+            width: 100px;
+            height: 100px;
+            position: relative;
+            transform-style: preserve-3d;
+            animation: rotate 5s infinite linear;
+        }
+        .face {
+            position: absolute;
+            width: 100px;
+            height: 100px;
+            background: rgba(255, 255, 255, 0.9);
+            border: 2px solid #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 16px;
+            font-weight: bold;
+            color: #000;
+        }
+        .front  { transform: translateZ(50px); }
+        .back   { transform: rotateY(180deg) translateZ(50px); }
+        .right  { transform: rotateY(90deg) translateZ(50px); }
+        .left   { transform: rotateY(-90deg) translateZ(50px); }
+        .top    { transform: rotateX(90deg) translateZ(50px); }
+        .bottom { transform: rotateX(-90deg) translateZ(50px); }
+        
+        @keyframes rotate {
+            from { transform: rotateX(0) rotateY(0); }
+            to { transform: rotateX(360deg) rotateY(360deg); }
+        }
+         footer {
+            text-align: center;
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: #fff;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+        #overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.7); /* Чёрный полупрозрачный фон */
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 20px;
+        }
+        .hidden {
+            display: none;
+        }
+        
